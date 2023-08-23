@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": "./src/pages",
     "lib": [
       "dom",
       "dom.iterable",
@@ -33,7 +34,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/pages/index.js"
   ],
   "exclude": [
     "node_modules"
