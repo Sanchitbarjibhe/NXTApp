@@ -1,1 +1,1 @@
-# NXTApp
+# NextHub
