@@ -1,52 +1,31 @@
 import React from 'react'
+import Image from 'next/image';
+import HomeIcon from 'src/assets/icons/home-filled.svg'
+import ListIcon from 'src/assets/icons/round-list.svg'
+import AddFilled from 'src/assets/icons/add-filled.svg'
+import Avatar from 'src/assets/icons/avatar-solid.svg'
 
-export default function appmenubar() {
+export default function Menubar() {
     return (
         <>
-            <div className='flex justify-center h-14 w-96 fixed bottom-16 text-white bg-primaryOne'>
-                <li>
-                    sanchit
-                </li>
-                <li>
-                    sanchit 2
-                </li>
-                <li>
-                    sanchit 3
-                </li>
-                <li>
-                    sanchit 4
-                </li> </div>
-            {/* <div style={{
-                backgroundColor: "#000000",
-                height: "3.5rem",
-                width: "50rem",
-                display: "flex",
-                marginTop: "30px",
-                padding: "11px",
-                position: "fixed",
-                bottom: "8%",
-                alignItems: "center",
-                justifyContent: "center",
-                borderRadius: "5rem",
-                color: "white",
-                fontFamily: "revert",
-                fontSize: "x-large",
-            }}>
-                <li>
-                    sanchit
-                </li>
-                <li>
-                    sanchit 2
-                </li>
-                <li>
-                    sanchit 3
-                </li>
-                <li>
-                    sanchit 4
-                </li>
+            <div className='flex h-24 w-1/2 rounded-full items-center justify-around fixed bottom-14 text-white bg-primaryTwo'>
+                <a href="#" className='cursor-pointer'>
+                    <Image src={HomeIcon} alt='' width={28} height={28} />
+                </a>
 
-            </div > */}
+                <a href="#" className='cursor-pointer'>
+                    <Image src={AddFilled} alt='' width={28} height={28} />
+                </a>
 
+                <a href="#" className='cursor-pointer'>
+                    <Image src={ListIcon} alt='' width={35} height={35} />
+                </a>
+
+                <a href="#" className='cursor-pointer'>
+                    <Image src={Avatar} alt='' width={28} height={28} />
+                </a>
+
+            </div>
         </>
     )
 }

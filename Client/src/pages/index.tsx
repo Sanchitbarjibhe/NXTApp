@@ -1,10 +1,10 @@
-import React from "react"
-import 'tailwindcss/tailwind.css';
-import { NextPage } from "next";
-
+import React from 'react'
+import Card from 'src/common/Card'
 
 export default function HomePage() {
     return (
-        <div>SANCHIT</div>
+        <div className='text-white'>
+            {/* <Card /> */}
+        </div>
     )
 }

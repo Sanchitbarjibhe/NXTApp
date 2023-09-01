@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/output.css"
+    "build:tailwind": "tailwind build -i src/custom/tailwind.css -o src/custom/output.css"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
