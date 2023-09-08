@@ -1,15 +1,16 @@
 import Menubar from "src/layouts/Menubar";
 import Header from "src/layouts/Header";
-import 'src/custom/output.css';
 
-export default function Root(props: any) {
+export default function Applayout(props: any) {
     return (
-        <div className='min-h-screen bg-primaryOne'>
-            <div className='flex justify-center'>
-                <Header />
-                <main className="container mx-auto p-4">{props.children}</main>
-                <Menubar />
-            </div >
-        </div>
+        <>
+            <div className='min-h-screen bg-primaryOne'>
+                {/* <Header /> */}
+                <div className='flex justify-center'>
+                    <main className="container mx-16 py-16">{props.children}</main>
+                    <Menubar />
+                </div>
+            </div>
+        </>
     )
 }

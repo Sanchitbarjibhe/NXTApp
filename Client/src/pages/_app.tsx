@@ -1,15 +1,15 @@
 import type { AppProps } from 'next/app'
-import Applayout from 'src/layouts/Applayout'
-import 'src/custom/output.css';
+import AppLayout from 'src/layouts/Applayout'
+import 'tailwindcss/tailwind.css';
 
 
 export default function App({ Component, pageProps }: AppProps) {
 
     return (
         <>
-            <Applayout>
+            <AppLayout>
                 <Component {...pageProps} />
-            </Applayout>
+            </AppLayout>
         </>
     )
 }

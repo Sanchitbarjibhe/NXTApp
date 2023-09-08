@@ -5,10 +5,10 @@ import ListIcon from 'src/assets/icons/round-list.svg'
 import AddFilled from 'src/assets/icons/add-filled.svg'
 import Avatar from 'src/assets/icons/avatar-solid.svg'
 
-export default function Menubar() {
+export default function menubar() {
     return (
         <>
-            <div className='flex h-24 w-1/2 rounded-full items-center justify-around fixed bottom-14 text-white bg-primaryTwo'>
+            <div className='flex p-6 w-1/2 rounded-full items-center justify-between fixed bottom-8 text-white bg-black'>
                 <a href="#" className='cursor-pointer'>
                     <Image src={HomeIcon} alt='' width={28} height={28} />
                 </a>
@@ -22,9 +22,12 @@ export default function Menubar() {
                 </a>
 
                 <a href="#" className='cursor-pointer'>
-                    <Image src={Avatar} alt='' width={28} height={28} />
+                    <Image src={Avatar} alt='' width={32} height={32} />
                 </a>
 
+                <a href="#" className='cursor-pointer'>
+                    <Image src={Avatar} alt='' width={28} height={28} />
+                </a>
             </div>
         </>
     )

@@ -10,9 +10,23 @@ module.exports = {
   ],// or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        xs: "300px",
+        ...defaultTheme.screens,
+      },
+      fontFamily: {
+        display: ["Spartan", "sans-serif"],
+      },
+      gridTemplateColumns: {
+        body: "96px 1fr",
+        card: "5rem 9rem 1fr min-content min-content min-content",
+      },
+      gridTemplateRows: {
+        mobile: "80px 1fr",
+      },
       colors: {
-        primaryOne: "#2D2D2D",
-        primaryTwo: "#232323",
+        primaryOne: '#353535',
+        primaryTwo: '#232323',
       },
     },
   },
