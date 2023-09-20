@@ -8,7 +8,7 @@ import Avatar from 'src/assets/icons/avatar-solid.svg'
 export default function menubar() {
     return (
         <>
-            <div className='flex p-6 w-1/2 rounded-full items-center justify-between fixed bottom-8 text-white bg-black'>
+            <div className='flex py-3 px-9 w-1/2 rounded-full items-center justify-between fixed bottom-8 text-white bg-black'>
                 <a href="#" className='cursor-pointer'>
                     <Image src={HomeIcon} alt='' width={28} height={28} />
                 </a>

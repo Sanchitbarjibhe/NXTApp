@@ -8,7 +8,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        display: ["Spartan", "sans serif"],
+        display: [
+          "Inter", "sans serif",
+          "Roboto", "sans serif"
+        ],
       },
       gridTemplateColumns: {
         body: "96px 1fr",
@@ -37,7 +40,7 @@ module.exports = {
         body: {
           bg: "#141625",
         },
-        sidebar: {
+        menubar: {
           bg: "#1F2139",
           border: "#494E6E",
         },
