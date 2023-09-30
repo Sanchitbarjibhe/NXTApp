@@ -1,7 +1,12 @@
 import React from 'react'
+import Indicators from 'src/common/Indicators'
+import SrtButton from 'src/common/SrtButton'
 
 export default function Subheader() {
     return (
-        <div>Subheader</div>
+        <div className='flex w-full'>
+            <SrtButton />
+            <Indicators />
+        </div>
     )
 }

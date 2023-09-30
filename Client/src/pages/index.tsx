@@ -1,10 +1,11 @@
 import React from 'react'
-import Card from 'src/common/Card'
+import Dashboard from './Dashboard/dashboard'
+
 
 export default function HomePage() {
     return (
         <div className='text-white'>
-            <Card />
+            <Dashboard />
         </div>
     )
 }
