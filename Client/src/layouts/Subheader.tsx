@@ -5,8 +5,8 @@ import SrtButton from 'src/common/SrtButton'
 export default function Subheader() {
     return (
         <div className='flex w-full'>
-            <SrtButton />
             <Indicators />
+            <SrtButton />
         </div>
     )
 }
